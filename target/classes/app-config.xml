@@ -1,0 +1,9 @@
+<mvc:cors>
+    <mvc:mapping path="/customers"
+        allowed-origins="http://localhost:8080, http://localhost:8090"
+        allowed-methods="POST, GET, PUT, DELETE"
+        allowed-headers="Content-Type"
+        exposed-headers="header-1, header-2, header-3"
+        allow-credentials="false"
+         />
+</mvc:cors>

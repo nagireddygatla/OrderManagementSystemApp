@@ -1,0 +1,114 @@
+<html>
+<title>Interview Challenge </title>
+
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="js/main.js"></script>
+</head>
+
+
+
+<style>
+
+body{
+	height:100%;
+	width:100%;
+	margin: 30 30 30 30;
+	padding:30 30 30 30;
+	background-color: Lavender ; 	
+}
+ 
+ div.scroll {
+border:2px solid #ccc;
+    width: 270px;
+    height: 300px;
+    overflow: scroll;
+}
+
+
+</style>
+</head>
+
+<body onload="loadCustProducts();">
+
+<div style="width: 100%;">
+<!-- <div class="col-xs-6 col-md-4 col-lg-2 vcenter"> -->
+    <div style="float:left; width:50%">
+   <span class="label label-default">Customer</span>
+   <br>
+   <br>
+
+<form>
+<select id="customers" onchange="ProductCust();">
+     <option>Choose a customer</option>
+
+</select>
+</form>
+
+<br>
+   <span class="label label-default">Nicknames</span> <br><br>     
+   
+   <div id="hi">
+     <input type="text" id="nickNames" disabled>
+   </div>
+  <br>
+  
+	 <button  type="button" class="btn btn-primary" onclick="addNick();">Add New Nickname</button>
+  <br>
+  <br>
+  
+  <input type="text" id="AddNickname" >   
+  
+  <br>
+  <br>
+
+    <span class="label label-default">Total Value</span> 
+	<br>
+  <br>
+  <input type="text" id="TotalValue" disabled>
+  <br>
+  <br>
+  
+     <span class="label label-default">Average $ per order</span> 
+<br>
+  <br>	 <input type="text" id="AvgValue" disabled>
+<br>
+<br>
+	 <button  type="button" class="btn btn-primary" onclick='downloadCSV({ filename: "coding-challenge.csv" });'>Export to CSV</button>
+
+	</div>
+<!-- <div class="col-xs-6 col-md-8 col-lg-10 vcenter"> -->	 
+
+<div style="float:right; width:50%">
+     <span class="label label-default">Products</span>
+	 <br>
+	 <br>
+
+	 <div class="scroll" id="cboxes">
+
+  <br>
+    <br>
+
+   </div>
+</div>
+<div style="clear:both"></div>
+
+<script>
+
+
+
+
+
+
+
+</script>
+
+</body>
+</html>
+
+
